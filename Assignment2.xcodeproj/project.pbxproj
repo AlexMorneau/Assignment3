@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280DFF9C260E698A00573C31 /* OrderModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 280DFF9A260E698A00573C31 /* OrderModel.xcdatamodeld */; };
+		280DFFA4260E6DC500573C31 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DFFA3260E6DC500573C31 /* OrderController.swift */; };
+		289CD53725DF10C7006146B5 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289CD53625DF10C7006146B5 /* Coffee.swift */; };
 		28A271CE25DAFBC0001D66C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A271CD25DAFBC0001D66C6 /* AppDelegate.swift */; };
 		28A271D025DAFBC0001D66C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A271CF25DAFBC0001D66C6 /* SceneDelegate.swift */; };
 		28A271D225DAFBC0001D66C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A271D125DAFBC0001D66C6 /* ViewController.swift */; };
 		28A271D525DAFBC0001D66C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A271D325DAFBC0001D66C6 /* Main.storyboard */; };
 		28A271D725DAFBC1001D66C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A271D625DAFBC1001D66C6 /* Assets.xcassets */; };
 		28A271DA25DAFBC1001D66C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A271D825DAFBC1001D66C6 /* LaunchScreen.storyboard */; };
+		28B8109625DD9E4F00AA550D /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8109525DD9E4F00AA550D /* CheckoutViewController.swift */; };
+		28E3F60325E02FD900E17C46 /* CheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3F60225E02FD900E17C46 /* CheckoutCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280DFF9B260E698A00573C31 /* OrderModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrderModel.xcdatamodel; sourceTree = "<group>"; };
+		280DFFA3260E6DC500573C31 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		289CD53625DF10C7006146B5 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		28A271CA25DAFBC0001D66C6 /* Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A271CD25DAFBC0001D66C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A271CF25DAFBC0001D66C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		28A271D625DAFBC1001D66C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A271D925DAFBC1001D66C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A271DB25DAFBC1001D66C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B8109525DD9E4F00AA550D /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		28E3F60225E02FD900E17C46 /* CheckoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280DFF9E260E6D6A00573C31 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				28E3F60225E02FD900E17C46 /* CheckoutCell.swift */,
+				28B8109525DD9E4F00AA550D /* CheckoutViewController.swift */,
+				28A271D125DAFBC0001D66C6 /* ViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		280DFFA2260E6DAC00573C31 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				280DFFA3260E6DC500573C31 /* OrderController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		289CD53525DF109E006146B5 /* coffeeModel */ = {
+			isa = PBXGroup;
+			children = (
+				289CD53625DF10C7006146B5 /* Coffee.swift */,
+			);
+			path = coffeeModel;
+			sourceTree = "<group>";
+		};
 		28A271C125DAFBC0001D66C6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +92,16 @@
 		28A271CC25DAFBC0001D66C6 /* Assignment2 */ = {
 			isa = PBXGroup;
 			children = (
+				280DFFA2260E6DAC00573C31 /* controllers */,
+				280DFF9E260E6D6A00573C31 /* views */,
+				289CD53525DF109E006146B5 /* coffeeModel */,
 				28A271CD25DAFBC0001D66C6 /* AppDelegate.swift */,
 				28A271CF25DAFBC0001D66C6 /* SceneDelegate.swift */,
-				28A271D125DAFBC0001D66C6 /* ViewController.swift */,
 				28A271D325DAFBC0001D66C6 /* Main.storyboard */,
 				28A271D625DAFBC1001D66C6 /* Assets.xcassets */,
 				28A271D825DAFBC1001D66C6 /* LaunchScreen.storyboard */,
 				28A271DB25DAFBC1001D66C6 /* Info.plist */,
+				280DFF9A260E698A00573C31 /* OrderModel.xcdatamodeld */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -137,9 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280DFFA4260E6DC500573C31 /* OrderController.swift in Sources */,
+				28B8109625DD9E4F00AA550D /* CheckoutViewController.swift in Sources */,
+				28E3F60325E02FD900E17C46 /* CheckoutCell.swift in Sources */,
 				28A271D225DAFBC0001D66C6 /* ViewController.swift in Sources */,
 				28A271CE25DAFBC0001D66C6 /* AppDelegate.swift in Sources */,
+				280DFF9C260E698A00573C31 /* OrderModel.xcdatamodeld in Sources */,
 				28A271D025DAFBC0001D66C6 /* SceneDelegate.swift in Sources */,
+				289CD53725DF10C7006146B5 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J345G3Z2U2;
 				INFOPLIST_FILE = Assignment2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J345G3Z2U2;
 				INFOPLIST_FILE = Assignment2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +387,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		280DFF9A260E698A00573C31 /* OrderModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				280DFF9B260E698A00573C31 /* OrderModel.xcdatamodel */,
+			);
+			currentVersion = 280DFF9B260E698A00573C31 /* OrderModel.xcdatamodel */;
+			path = OrderModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 28A271C225DAFBC0001D66C6 /* Project object */;
 }

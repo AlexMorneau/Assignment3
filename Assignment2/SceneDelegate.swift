@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Assignment2
+//  Assignment3
 //
-//  Created by user191445 on 2/15/21.
+//  Created by Alex Morneau on 2/15/21.
 //
 
 import UIKit
